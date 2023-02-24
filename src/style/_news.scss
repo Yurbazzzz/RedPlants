@@ -1,0 +1,50 @@
+.news {
+    margin-top: 10%;
+    margin-bottom: 15%;
+    @include primary_font;
+
+    &__title {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    &__form {
+        width: 50%;
+        margin: 0% 25%;
+        display: flex;
+    }
+
+    &__input {
+        width: 77%;
+        background-color: #EEEEEE;
+        border: none;
+        padding-left: 15px;
+        font-size: 14px;
+        @include primary_font;
+        color: black;
+    }
+    &__input::placeholder {
+        font-size: 14px;
+        @include primary_font;
+        color: black;
+    }
+    &__input:focus {
+        outline: none;
+    }
+
+    &__btn {
+        width: 23%;
+        text-transform: uppercase;
+        @include secondary-font;
+        background-color: black;
+        color: white;
+        padding: 2% 0%;
+        font-size: 12px;
+        border: none;
+    }
+
+    &__btn:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,49 @@
+.blog {
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__card {
+        width: 49%;
+        position: relative;
+        text-decoration: none;
+        color: #C1C1C1;
+        font-size: 12px;
+        @include secondary-font;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__info {
+        width: 25%;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 75%;
+        background-color: white;
+        padding: 10px 10px;
+    }
+
+    &__writer {
+        @include primary-font;
+        font-size: 16px;
+        color: black;
+        margin: 0%;
+    }
+
+    &__id {
+        margin: 10px 0px;
+    }
+    &__title {
+        @include primary-font;
+        font-size: 24px;
+        color: black;
+        font-weight: 100;
+        margin-top: 0px;
+    }
+}
+

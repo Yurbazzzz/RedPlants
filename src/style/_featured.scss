@@ -1,0 +1,29 @@
+.featured {
+    display: flex;
+
+    &__content {
+        width: 25%;
+    }
+
+    &__title {
+        font-size: 36px;
+        @include primary-font;
+        font-weight: 100;
+    }
+    &__subtitle {
+        font-size: 14px;
+        @include secondary-font;
+
+    }
+
+    &__staff {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.featured__card {
+    width: 30%;
+}

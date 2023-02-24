@@ -1,0 +1,15 @@
+body {
+    margin: 0% 10%;
+}
+
+p {
+    margin: 0px;
+}
+
+@mixin primary-font {
+    font-family: 'Playfair Display';
+}
+
+@mixin secondary-font {
+    font-family: 'Inter';
+}

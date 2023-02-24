@@ -1,0 +1,18 @@
+.categories {
+    @include primary-font;
+
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 8%;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+

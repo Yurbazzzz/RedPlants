@@ -1,0 +1,123 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="icon" type="image/x-icon" href=require("./images/favicone.svg"))
+    link(rel="preconnect" href="https://fonts.googleapis.com") 
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link( href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet")
+    title RedPlants
+  body 
+    header.header
+      img.header__img(src=require("./images/logo.png") alt='header-img')
+
+      div.header__nav
+        a.header__link(href="") Home 
+        a.header__link(href="") Catalogue
+        a.header__link(href="") Contact
+
+      a.header__cart(href="") Cart 
+
+    main 
+      section.shopnow 
+        div.shopnow__content
+          h1.shopnow__title Find perfect plants <br> for your home
+          p.shopnow__subtitle Beautiful plants that encourage <br> you to get creative.
+
+          button.shopnow__btn SHOP NOW
+
+        img.shopnow__img(src=require("./images/header.png") alt='shopnow-photo')
+
+      section.categories 
+
+        h2.categories__title Categories
+
+        div.categories__container
+          a.card(href="") 
+            img.card__img(src=require("./images/catalogue1.png"), alt="Jungle Plants", )
+            p.card__name Jungle Plants
+
+          a.card(href="")  
+            img.card__img(src=require("./images/catalogue2.png"), alt="Outdoor Plants", )
+            p.card__name Outdoor Plants
+
+          a.card(href="") 
+            img.card__img(src=require("./images/catalogue3.png"), alt="Bedroom Plants", )
+            p.card__name Bedroom Plants
+
+          a.card(href="") 
+            img.card__img(src=require("./images/catalogue4.png"), alt="Indoor Plants", )
+            p.card__name Indoor Plants
+
+      section.philosophy
+        h2.philosophy__title Love and work are to people what <br> water and sunshine are to plants
+
+      section.featured 
+        div.featured__content
+          h3.featured__title Featured
+          p.featured__subtitle Our plants are 100% organic, we don't use pesticides or harmful chemicals.<br> <br> But please don't eat them
+
+        div.featured__staff
+          div.card.featured__card 
+            img.card__img(src=require("./images/item1.png") alt='item1')
+            p.card__subtitle Plant 1
+            p.card__title 150€
+
+          div.card.featured__card 
+            img.card__img(src=require("./images/item2.png") alt='item2')
+            p.card__subtitle Plant 2
+            p.card__title 70€
+
+          div.card.featured__card
+            img.card__img(src=require("./images/item3.png") alt='item3')
+            p.card__subtitle Plant 3
+            p.card__title 50€
+      
+      section.blog 
+        a.blog__card(href="")
+          img.blog__img(src=require("./images/blog1.png") alt='blog1')
+          div.blog__info
+            p Writen by 
+            p.blog__writer Melissa Bail
+          p.blog__id Edition 291
+          h4.blog__title How to water your freaking plants so they don't die after one week
+
+        a.blog__card(href="") 
+          img.blog__img(src=require("./images/blog2.png") alt='blog3')
+          div.blog__info
+            p Writen by 
+            p.blog__writer Jesse Rowe
+          p.blog__id Edition 292
+          h4.blog__title How to water your freaking plants so they don't die after one week
+
+      section.news 
+        h3.news__title Subscribe on our news  
+        form.news__form(action="", method="post") 
+          input.news__input(type="text" placeholder="Enter your email here")
+          button.news__btn(type="submit") Subscribe
+    
+    footer.footer 
+      img.footer__img(src=require("./images/logo.png") alt='logo')
+
+      div.footer__content
+        div.footer__content-colomn
+          p.footer__titles Connect
+          a.footer__link(href="https://www.instagram.com") Instagram
+          a.footer__link(href="https://www.facebook.com") Facebook
+          a.footer__link(href="https://www.pinterest.com") Pinterest
+          a.footer__link(href="https://www.youtube.com") YouTube
+      
+        div.footer__content-colomn
+          p.footer__titles Resources
+          a.footer__link(href="") Return Policy
+          a.footer__link(href="") Track An Order
+          a.footer__link(href="") FAQs
+          a.footer__link(href="") Privacy Policy
+        
+        div.footer__content-colomn
+          p.footer__titles About
+          a.footer__link(href="") Our Story
+          a.footer__link(href="") Careers
+          a.footer__link(href="") Press

@@ -1,0 +1,41 @@
+.card {
+    width: 23%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+
+    &__img {
+        width: 100%;
+        height: 80%;
+        background-size: cover;
+    }
+
+    &__name {
+        height: 20%;
+        position: relative;
+        font-size: 24px;
+        color: black;
+    }
+
+
+    &__title {
+        font-size: 24px;
+        @include primary-font;
+    }
+    &__subtitle {
+        font-size: 12px;
+        @include secondary-font;
+        color: #C1C1C1;
+    }
+}
+
+.card:hover .card__img{
+    width: 106%;
+    height: 83%;
+    transition: all 1s;
+    overflow: hidden;
+    margin-top: -3%;
+    margin-left: -3%;
+}
