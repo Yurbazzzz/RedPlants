@@ -8,6 +8,7 @@ html(lang="en")
     link(rel="preconnect" href="https://fonts.googleapis.com") 
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link( href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js") 
     title RedPlants
   body 
     header.header
@@ -77,7 +78,7 @@ html(lang="en")
       
       section.blog 
         a.blog__card(href="")
-          img.blog__img(src=require("./images/blog1.png") alt='blog1')
+          img.blog__img(src=require("./images/blog1.WebP") alt='blog1')
           div.blog__info
             p Writen by 
             p.blog__writer Melissa Bail
@@ -85,7 +86,7 @@ html(lang="en")
           h4.blog__title How to water your freaking plants so they don't die after one week
 
         a.blog__card(href="") 
-          img.blog__img(src=require("./images/blog2.png") alt='blog3')
+          img.blog__img(src=require("./images/blog2.WebP") alt='blog3')
           div.blog__info
             p Writen by 
             p.blog__writer Jesse Rowe
@@ -95,9 +96,10 @@ html(lang="en")
       section.news 
         h3.news__title Subscribe on our news  
         form.news__form(action="", method="post") 
-          input.news__input(type="text" placeholder="Enter your email here")
-          button.news__btn(type="submit") Subscribe
-    
+          input.news__input(type="text" id="gmail" placeholder="Enter your email here")
+          button.news__btn(type="submit" onclick="sendJSON()" ) Subscribe
+        p.result 
+
     footer.footer 
       img.footer__img(src=require("./images/logo.png") alt='logo')
 
