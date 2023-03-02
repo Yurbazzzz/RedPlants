@@ -20,6 +20,20 @@ html(lang="en")
         a.header__link(href="") Contact
 
       a.header__cart(href="") Cart 
+  
+      button.openbtn(data-popup="form-order")
+        img(src=require("./images/iconmonstr-menu-lined-32.png"), alt="open")
+
+      div.popup(data-popup="form-order")
+        div.window
+          button.close 
+            img.close__img(src=require("./images/iconmonstr-x-mark-circle-lined-32.png"), alt="close")
+
+          a.window__link(href="") Home 
+          a.window__link(href="") Catalogue
+          a.window__link(href="") Contact
+
+          a.window__cart(href="") Cart       
 
     main 
       section.shopnow 
@@ -29,7 +43,9 @@ html(lang="en")
 
           button.shopnow__btn SHOP NOW
 
-        img.shopnow__img(src=require("./images/header.WebP") alt='shopnow-photo')
+        div.shopnow__img
+          img.img(src=require("./images/header.WebP") alt='shopnow-photo')
+          
 
       section.categories 
 
@@ -56,25 +72,25 @@ html(lang="en")
         h2.philosophy__title Love and work are to people what <br> water and sunshine are to plants
 
       section.featured 
-        div.featured__content
+        div.card.featured__card.featured__content
           h3.featured__title Featured
           p.featured__subtitle Our plants are 100% organic, we don't use pesticides or harmful chemicals.<br> <br> But please don't eat them
 
-        div.featured__staff
-          div.card.featured__card 
-            img.card__img(src=require("./images/item1.WebP") alt='item1')
-            p.card__subtitle Plant 1
-            p.card__title 150€
 
-          div.card.featured__card 
-            img.card__img(src=require("./images/item2.WebP") alt='item2')
-            p.card__subtitle Plant 2
-            p.card__title 70€
+        a.card.featured__card(href="") 
+          img.card__img(src=require("./images/item1.WebP") alt='item1')
+          p.card__subtitle Plant 1
+          p.card__title 150€
 
-          div.card.featured__card
-            img.card__img(src=require("./images/item3.WebP") alt='item3')
-            p.card__subtitle Plant 3
-            p.card__title 50€
+        a.card.featured__card(href="") 
+          img.card__img(src=require("./images/item2.WebP") alt='item2')
+          p.card__subtitle Plant 2
+          p.card__title 70€
+
+        a.card.featured__card(href="") 
+          img.card__img(src=require("./images/item3.WebP") alt='item3')
+          p.card__subtitle Plant 3
+          p.card__title 50€
       
       section.blog 
         a.blog__card(href="")

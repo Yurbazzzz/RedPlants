@@ -6,10 +6,19 @@ p {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 @mixin primary-font {
     font-family: 'Playfair Display';
 }
 
 @mixin secondary-font {
     font-family: 'Inter';
+}
+
+.img {
+    width: 100%;
+    height: fit-content;
 }
