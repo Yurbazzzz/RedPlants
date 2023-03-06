@@ -171,6 +171,17 @@
 }
 
 @media screen and (max-width: 425px) {
+    .shopnow {
+        &__content {
+            padding: 5px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+    }
     .card {
         &__img {
             width: 120%;
@@ -192,6 +203,17 @@
 }
 
 @media screen and (max-width: 375px) {
+    .shopnow {
+        &__content {
+            padding: 2px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle {
+            font-size: 10px;
+        }
+    }
     .footer{
         &__content {
         width: 100%;
@@ -201,4 +223,3 @@
         }
     }
 }
-
